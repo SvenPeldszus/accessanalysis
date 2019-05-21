@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: AccessAnalysis Core
 Bundle-SymbolicName: de.uni_hamburg.informatik.swt.accessanalysis;singleton:=true
-Bundle-Version: 1.0.20120313
+Bundle-Version: 1.1.20120420
 Bundle-Activator: de.uni_hamburg.informatik.swt.accessanalysis.internal.AccessAnalysisActivator
 Require-Bundle: org.eclipse.core.runtime,
  org.eclipse.core.resources,

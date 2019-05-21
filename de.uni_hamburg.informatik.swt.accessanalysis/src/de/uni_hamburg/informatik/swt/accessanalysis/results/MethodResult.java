@@ -79,6 +79,11 @@ public class MethodResult implements Result
         {
             return Access.PUBLIC;
         }
+
+        if (_method.isConstructor() && _method.getDeclaringType().isEnum())
+        {
+            return Access.PRIVATE;
+        }
         
         return Access.fromFlags(_method);
     }
