@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension-point id="de.uni_hamburg.informatik.swt.accessanalysis.constraints" name="Access Constraint" schema="schema/de.uni_hamburg.informatik.swt.accessanalysis.constraints.exsd"/>
+   <extension
+         point="org.eclipse.ui.views">
+      <category
+            id="de.uni_hamburg.informatik.swt.accessanalysis"
+            name="AccessAnalysis">
+      </category>
+   </extension>
+   <extension
+         point="org.eclipse.ui.propertyPages">
+      <page
+            class="de.uni_hamburg.informatik.swt.accessanalysis.internal.AccessAnalysisPropertyPage"
+            icon="icons/access.png"
+            id="de.uni_hamburg.informatik.swt.accessanalysis"
+            name="AccessAnalysis">
+         <enabledWhen>
+            <instanceof
+                  value="org.eclipse.jdt.core.IJavaProject">
+            </instanceof>
+         </enabledWhen>
+      </page>
+   </extension>
+</plugin>
+

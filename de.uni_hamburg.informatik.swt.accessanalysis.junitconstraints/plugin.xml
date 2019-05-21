@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="de.uni_hamburg.informatik.swt.accessanalysis.constraints">
+      <typeconstraint 
+      		class="de.uni_hamburg.informatik.swt.accessanalysis.junitconstraints.JunitConstraintChecker">
+      </typeconstraint>
+      <methodconstraint
+            class="de.uni_hamburg.informatik.swt.accessanalysis.junitconstraints.JunitConstraintChecker">
+      </methodconstraint>
+   </extension>
+   <extension
+         point="org.eclipse.ui.propertyPages">
+      <page
+            category="de.uni_hamburg.informatik.swt.accessanalysis"
+            class="de.uni_hamburg.informatik.swt.accessanalysis.junitconstraints.JunitConstraintsPropertyPage"
+            id="de.uni_hamburg.informatik.swt.accessanalysis.junitconstraints.page1"
+            name="JUnit Constraints">
+         <enabledWhen>
+            <instanceof
+                  value="org.eclipse.jdt.core.IJavaProject">
+            </instanceof>
+         </enabledWhen>
+      </page>
+   </extension>
+</plugin>

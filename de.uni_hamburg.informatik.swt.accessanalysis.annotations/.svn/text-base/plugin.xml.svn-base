@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+	<extension
+         point="de.uni_hamburg.informatik.swt.accessanalysis.constraints">
+      <typeconstraint 
+      		class="de.uni_hamburg.informatik.swt.accessanalysis.annotations.AnnotationConstraintChecker">
+      </typeconstraint>
+      <methodconstraint
+            class="de.uni_hamburg.informatik.swt.accessanalysis.annotations.AnnotationConstraintChecker">
+      </methodconstraint>
+   </extension>
+   <extension
+         point="org.eclipse.ui.propertyPages">
+      <page
+            category="de.uni_hamburg.informatik.swt.accessanalysis"
+            class="de.uni_hamburg.informatik.swt.accessanalysis.annotations.AnnotationConstraintsPropertyPage"
+            id="de.uni_hamburg.informatik.swt.accessanalysis.annotations.page1"
+            name="Annotations">
+         <enabledWhen>
+            <instanceof
+                  value="org.eclipse.jdt.core.IJavaProject">
+            </instanceof>
+         </enabledWhen>
+      </page>
+   </extension>
+
+</plugin>
