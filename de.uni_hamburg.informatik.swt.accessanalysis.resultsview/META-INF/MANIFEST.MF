@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: ResultsView for AccessAnalysis
 Bundle-SymbolicName: de.uni_hamburg.informatik.swt.accessanalysis.resultsview;singleton:=true
-Bundle-Version: 1.0.20120313
+Bundle-Version: 1.2.20120530
 Require-Bundle: org.eclipse.ui,
  org.eclipse.core.runtime,
  de.uni_hamburg.informatik.swt.accessanalysis;bundle-version="0.17.20100818",

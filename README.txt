@@ -1,7 +1,7 @@
 SOURCECODE of AccessAnalysis - Readme
 =====================================
 
-Version 1.1
+Version 1.2
 
 Eclipse-Plug-In that determines the minimal access modifiers of Java types and 
 methods and computes the metrics Inappropriate Generosity with Accessibility of 
@@ -25,11 +25,15 @@ Public License (EPL). You find the license text in the file LICENSE.txt.
 For more information see: http://www.eclipse.org/legal/eplfaq.php
 
 Binaries of this programm ready to install can be found under: 
-https://sourceforge.net/projects/accessanalysis/files/1.1
+https://sourceforge.net/projects/accessanalysis/files
 
 
 Release Notes
 -------------
+
+Changes in Version 1.2:
+* Changed table column headers in AccessAnalysis View from "Minimal Access"/"Actual
+Access" to "Minimal Access Modifier"/"Actual Access Modifier".
 
 Bug fixed in Version 1.1:
 * Enum constructors without explicit access modifier are now correctly classified 

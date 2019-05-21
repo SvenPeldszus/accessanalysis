@@ -121,16 +121,16 @@ public class AccessAnalysisView extends ViewPart
         layout.addColumnData(new ColumnWeightData(10, 30));
         
         treeColumn = new TreeColumn(tree, SWT.LEFT);
-        treeColumn.setText("Minimal Access");
+        treeColumn.setText("Minimal Access Modifier");
         treeViewerColumn = new TreeViewerColumn(viewer, treeColumn);
         treeViewerColumn.setLabelProvider(new MinimalAccessLabelProvider());
-        layout.addColumnData(new ColumnWeightData(20, 45));
+        layout.addColumnData(new ColumnWeightData(26, 80));
         
         treeColumn = new TreeColumn(tree, SWT.LEFT);
-        treeColumn.setText("Actual Access");
+        treeColumn.setText("Actual Access Modifier");
         treeViewerColumn = new TreeViewerColumn(viewer, treeColumn);
         treeViewerColumn.setLabelProvider(new ActualAccessLabelProvider());
-        layout.addColumnData(new ColumnWeightData(20, 45));
+        layout.addColumnData(new ColumnWeightData(26, 80));
 
         tree.setLayout(layout);
     }

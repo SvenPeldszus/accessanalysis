@@ -2,10 +2,10 @@
 <feature
       id="de.uni_hamburg.informatik.swt.accessanalysis.feature"
       label="AccessAnalysis"
-      version="1.1.20120420"
+      version="1.2.20120530"
       provider-name="Christian Zoller (Universität Hamburg, Fachbereich Informatik, Softwaretechnik)">
 
-   <description>
+   <description url="http://accessanalysis.sourceforge.net">
       Determines the Minimal Access Modifiers of Java types and methods and computes the metrics Inappropriate Generosity with Accessibility of Types (IGAT) and Inappropriate Generosity with Accessibility of Methods (IGAM).
    </description>
 
@@ -108,13 +108,6 @@ This Agreement is governed by the laws of the State of New York and the intellec
    </url>
 
    <plugin
-         id="de.uni_hamburg.informatik.swt.accessanalysis.resultsview"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
          id="de.uni_hamburg.informatik.swt.accessanalysis.junitconstraints"
          download-size="0"
          install-size="0"
@@ -137,6 +130,13 @@ This Agreement is governed by the laws of the State of New York and the intellec
 
    <plugin
          id="de.uni_hamburg.informatik.swt.accessanalysis"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="de.uni_hamburg.informatik.swt.accessanalysis.resultsview"
          download-size="0"
          install-size="0"
          version="0.0.0"
